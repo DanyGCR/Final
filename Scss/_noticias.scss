@@ -1,0 +1,145 @@
+$colorprimario: #26010F;
+$colorsecundario: #F2F2F2;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import "footer";
+@font-face {
+    font-family: Arabic;
+    src: url(../Letras/Qatar2022/Qatar2022Arabic-Heavy.ttf);
+}
+body { 
+    
+    background-attachment: fixed ;
+    background-size: 100% 100%;
+    background-color: $colorprimario;
+}
+header{
+    font-family: Arabic; color: $colorsecundario;
+    text-align: center;
+}
+h1{
+    font-family: Arabic;
+    text-align: center;
+    font-size: 30px;
+}
+legend { font-size: larger;
+color: $colorsecundario;
+font-family: Arabic;
+
+}
+h2{
+    font-size: 20px; color:$colorsecundario;
+    font-family: Arabic;
+}
+
+.menu{
+    background-color: $colorsecundario;
+    padding: 0;
+    margin: 20px;
+    font-family: Arabic;
+    list-style-type: none;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    padding: 20px;
+    margin: 10px;
+    color: $colorprimario;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li a:hover{
+    color: $colorsecundario;
+    background-color: $colorprimario;
+    border-radius: 50%;
+}
+
+main{
+    display: flex; justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagen{
+    text-align: center; 
+}
+
+body{
+    background-color: $colorprimario;
+    font-family: Arabic
+
+}
+h1{
+    color: $colorsecundario;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+div{
+    margin: 10px;
+}
+img{
+    width: 250px;
+    border: double 2px grey;
+    opacity: 100;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img:hover{
+    opacity: 1;
+    border: solid 2px $colorsecundario;
+}
+
+h1{
+    font-family: Arabic;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.contenedor{
+    background-color: $colorsecundario;
+    width: 90%;
+    height: 400px;
+    font-size: 2rem;
+    text-align: center;
+    margin:20px auto;
+    
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(3, 100px);
+    gap:20px;
+    align-items: stretch ;
+}
+.hijo{
+    background-color: $colorprimario;
+    border: 2px solid red;
+}
+
+@media (max-width:500px) {
+    .contenedor {
+grid-template-columns: 1fr;
+    }
+}
+@media (max-width:500px) {
+    .menu {
+        grid-template-columns: 1fr;
+    
+    }
+}
+@media (max-width:500px) {
+    .menu li a {
+        grid-template-columns: 1fr;
+    }
+}
